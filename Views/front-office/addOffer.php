@@ -15,5 +15,6 @@ $offer= new Offer($_POST['title'],$_POST['destination'], $_POST['dd'], $_POST['r
 var_dump($offer);
 $oC= new OfferController();
 $oC->addOffer($offer);
+header('Location: /site2a37/Views/front-office/listOffers.php');
 }
 ?>

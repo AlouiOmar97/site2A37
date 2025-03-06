@@ -8,5 +8,6 @@ if(
 $id= $_GET['id'];
 $oC= new OfferController();
 $oC->deleteOffer($id);
+header('Location: /site2a37/Views/front-office/listOffers.php');
 }
 ?>

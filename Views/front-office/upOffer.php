@@ -17,5 +17,6 @@ var_dump($offer);
 $id= $_GET['id'];
 $oC= new OfferController();
 $oC->updateOffer($id,$offer);
+header('Location: /site2a37/Views/front-office/listOffers.php');
 }
 ?>
